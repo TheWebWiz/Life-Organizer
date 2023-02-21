@@ -10,6 +10,8 @@ html {
 body {
   max-width: 800px;
   width: 100%;
+  min-height: 100vh;
+  height: auto;
   background-color: $white-color;
   margin: auto;
 }
@@ -26,6 +28,73 @@ h1 {
   position: relative;
 }
 
+main {
+  width: 90%;
+  margin: 20px auto;
+  height: 100px;
+}
+
+#list-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  h2 {
+    font-weight: normal;
+    font-size: 25px;
+  }
+
+  button {
+    width: 90px;
+    height: 31px;
+    margin-bottom: 5px;
+    border-radius: 14px;
+    background: $pink-color;
+    font-size: 18px;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 3px solid $black-color;
+  height: 20px;
+}
+
+//TODO: needs fixed
 form {
   display: none;
+}
+
+//todo list item
+#list-items {
+  height: 100%;
+}
+
+.item {
+  font-size: 22px;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  margin-bottom: 10px;
+}
+
+#about-page-main {
+  h2 {
+    text-align: center;
+    margin: 30px;
+  }
+
+  h3 {
+    margin: 15px 0px;
+  }
+
+  #contact-section {
+    img {
+      height: 130px;
+      width: 90px;
+      border: 1px solid $white-color;
+      object-fit: cover;
+    }
+  }
 }

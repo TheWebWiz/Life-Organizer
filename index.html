@@ -35,16 +35,19 @@
       </div>
     </nav>
     <main>
-      <h2>To Do List</h2>
-      <button
-        id="clear-items"
-        class="button"
-        title="Clear the list"
-        aria-label="Remove all items from the list"
-        tabindex="0"
-      >
-        Clear
-      </button>
+      <div id="list-container">
+        <h2>To Do:</h2>
+        <button
+          id="clear-items"
+          class="button"
+          title="Clear the list"
+          aria-label="Remove all items from the list"
+          tabindex="0"
+        >
+          CLEAR
+        </button>
+      </div>
+      <hr />
       <section class="new-item-entry">
         <form id="item-entry-form">
           <label for="new-item">Enter a new to do list item</label>
@@ -68,13 +71,14 @@
         </form>
       </section>
       <section id="list-items">
-        <div class="item">
+        <label class="item" for="1">
           <input type="checkbox" name="1" id="1" tabindex="0" />
-          <label for="1">The first item on the list</label>
-        </div>
+          The first item on the list</label
+        >
+
         <div class="item">
           <input type="checkbox" name="2" id="2" tabindex="0" />
-          <label for="1">The second item on the list</label>
+          <label for="2">The second item on the list</label>
         </div>
       </section>
     </main>
