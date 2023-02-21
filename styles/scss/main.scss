@@ -1,1 +1,31 @@
+@import "./variables";
+@import "./nav";
 @import "./resets";
+
+html {
+  font-size: 20px;
+  background-color: $black-color;
+}
+
+body {
+  max-width: 800px;
+  width: 100%;
+  background-color: $white-color;
+  margin: auto;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 5px 25px;
+  margin: 5px 50px 5px 0px;
+  border: 2px solid $black-color;
+  background-color: $light-purple-color;
+  color: $white-color;
+  font-weight: normal;
+  z-index: 4;
+  position: relative;
+}
+
+form {
+  display: none;
+}
