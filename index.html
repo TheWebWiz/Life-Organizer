@@ -62,7 +62,9 @@
       </section>
       <section class="new-item-entry">
         <form id="item-entry-form">
-          <label for="new-item">Enter a new to do list item</label><br />
+          <label for="new-item" class="hidden-form"
+            >Enter a new to do list item</label
+          ><br />
           <input
             id="new-item"
             type="text"
@@ -70,14 +72,17 @@
             autocomplete="off"
             placeholder="Add Item"
             tabindex="0"
+            class="hidden-form"
           />
           <button
             id="add-item"
-            class="button"
+            class="button hidden-form"
             title="Add new item"
             aria-label="Add new item to list"
             tabindex="0"
           >
+            +
+          </button>
           <button
             id="open-add-item"
             class="button"
