@@ -1,0 +1,29 @@
+#about-page-main {
+  height: 100%;
+  h2 {
+    text-align: center;
+    margin: 30px;
+  }
+
+  h3 {
+    margin: 15px 0px;
+  }
+
+  #contact-section {
+    padding-bottom: 13px;
+    img {
+      height: 130px;
+      width: 90px;
+      border: 1px solid $white-color;
+      object-fit: cover;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 75%;
+}

@@ -88,19 +88,20 @@
   padding-top: 120px;
   box-shadow: inset 2px 2000px $dark-purple-color;
   height: 100vh;
-  width: 100%;
-  transform: translate(-150%);
+  width: 90%;
+  transform: scale(1, 0);
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-left: -40px;
   padding-left: 50px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0s ease-in-out;
   text-align: center;
+  z-index: 1;
 }
 
 .navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -108,12 +109,11 @@
   position: absolute;
   top: 5px;
   right: 15px;
-  font-size: 1.2rem;
-  color: #0e2431;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
+  //transition: transform 0.5s ease-in-out;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {

@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./nav";
 @import "./resets";
+@import "./about";
 
 html {
   font-size: 20px;
@@ -11,7 +12,7 @@ body {
   max-width: 800px;
   width: 100%;
   min-height: 100vh;
-  height: 100vh;
+  height: 100%;
   background-color: $white-color;
   margin: auto;
   position: relative;
@@ -53,6 +54,7 @@ main {
     border-radius: 14px;
     background: $pink-color;
     font-size: 18px;
+    box-sizing: content-box;
   }
 }
 
@@ -66,7 +68,6 @@ hr {
   position: absolute;
   bottom: 0px;
   width: 90%;
-  //width: 100%;
 
   form {
     width: 100%;
@@ -122,24 +123,4 @@ hr {
   grid-template-columns: 1em auto;
   gap: 0.5em;
   margin-bottom: 10px;
-}
-
-#about-page-main {
-  h2 {
-    text-align: center;
-    margin: 30px;
-  }
-
-  h3 {
-    margin: 15px 0px;
-  }
-
-  #contact-section {
-    img {
-      height: 130px;
-      width: 90px;
-      border: 1px solid $white-color;
-      object-fit: cover;
-    }
-  }
 }
