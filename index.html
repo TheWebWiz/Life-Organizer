@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="James (Web Wizard) Randall" />
+    <meta
+      name="description"
+      content="This is a To Do web app that allows the user to record tasks and check them off. Returning to the page while on the same device will reaload data"
+    />
+    <link rel="stylesheet" href="/styles/dist/css/main.min.css" />
+    <link rel="icon" type="image/x-icon" href="styles/images/WW.001.png" />
+    <script src="js/main.js" type="module"></script>
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <h1>Life Organizer</h1>
+          </div>
+          <ul class="menu-items">
+            <li><a href="./index.html">ToDo</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="list-container">
+        <h2>To Do:</h2>
+        <button
+          id="clear-items"
+          class="button"
+          title="Clear the list"
+          aria-label="Remove all items from the list"
+          tabindex="0"
+        >
+          CLEAR
+        </button>
+      </div>
+      <hr />
+
+      <div id="list-items">
+        <label class="item" for="1">
+          <input type="checkbox" name="1" id="1" tabindex="0" />
+          The first item on the list</label
+        >
+
+        <div class="item">
+          <input type="checkbox" name="2" id="2" tabindex="0" />
+          <label for="2">The second item on the list</label>
+        </div>
+      </div>
+      <div class="new-item-entry">
+        <form id="item-entry-form">
+          <label for="new-item" class="hidden-form"
+            >Enter a new to do list item</label
+          ><br />
+          <input
+            id="new-item"
+            type="text"
+            size="30"
+            autocomplete="off"
+            placeholder="Add Item"
+            tabindex="0"
+            class="hidden-form"
+          />
+          <button
+            id="add-item"
+            class="button hidden-form"
+            title="Add new item"
+            aria-label="Add new item to list"
+            tabindex="0"
+          >
+            +
+          </button>
+          <button
+            id="open-add-item"
+            class="button"
+            title="open new item"
+            aria-label="open new item"
+            tabindex="0"
+          >
+            +
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
